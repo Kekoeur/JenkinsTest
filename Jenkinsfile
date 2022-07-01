@@ -11,7 +11,8 @@ pipeline {
 
   stage('test') {
     steps {
-        echo 'Testing ...'
+        composer install
+        ./vendor/bin/phpunit
     }
   }
 
