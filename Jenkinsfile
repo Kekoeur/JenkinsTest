@@ -12,7 +12,8 @@ pipeline {
   stage('test') {
     steps {
         sh 'composer install'
-        sh 'composer test'
+        sh './vendor/bin/phpunit  --log-junit test.xml -c phpunit.xml'
+        junit 'test.xml'
     }
   }
 
