@@ -14,5 +14,11 @@
             "Cart\\" : "src/",
             "" : "tests/"
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
     }
 }
